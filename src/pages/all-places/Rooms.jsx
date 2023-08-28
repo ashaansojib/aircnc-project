@@ -9,7 +9,7 @@ const Rooms = () => {
         .then( data => setRooms(data))
     },[])
     return (
-        <div className='grid grid-cols-4 gap-3 justify-between items-items my-container'>
+        <div className='grid grid-cols-4 gap-3 justify-between items-items my-container p-2'>
             {
                 rooms.map( room => <SingleRoom 
                     key={room._id}
