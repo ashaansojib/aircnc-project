@@ -8,15 +8,15 @@ const Header = () => {
                 {/* tabs area */}
                 <Tabs>
                     <TabList>
-                        <Tab>Title 1</Tab>
-                        <Tab>Title 2</Tab>
+                        <Tab><button className='py-2 px-3 rounded-sm bg-red-500'>Login</button></Tab>
+                        <Tab><button className='py-2 px-3 rounded-sm bg-red-500'>Login</button></Tab>
                     </TabList>
 
                     <TabPanel>
-                        <h2>Any content 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum reiciendis dolore in! Itaque nobis labore eveniet, ducimus unde maiores debitis nam vel facere illum asperiores ea. Doloremque earum dolore voluptatum!</p>
                     </TabPanel>
                     <TabPanel>
-                        <h2>Any content 2</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, numquam? Minus sit veniam cumque unde vel suscipit nam asperiores ullam reprehenderit corrupti, porro tempora pariatur architecto recusandae numquam, quibusdam quis!</p>
                     </TabPanel>
                 </Tabs>
             </div>
