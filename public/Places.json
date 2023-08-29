@@ -1,47 +1,47 @@
 [
     {
-        "_id": "64eca52d848485bf867a68ff",
         "name": "name",
         "image": "https://a0.muscache.com/im/pictures/a71562ca-bb0e-425d-b33f-e397617159e8.jpg?im_w=720",
         "location": "Dhaka",
         "date": "Aug 1 - 15",
         "rating": 4.3,
-        "price": "1200"
+        "price": "1200",
+        "category": "Lake"
     },
     {
-        "_id": "64eca52dd4af964c6600c661",
         "name": "name",
         "image": "https://a0.muscache.com/im/pictures/a71562ca-bb0e-425d-b33f-e397617159e8.jpg?im_w=720",
         "location": "Dhaka",
         "date": "Aug 1 - 15",
         "rating": 4.3,
-        "price": "1200"
+        "price": "1200",
+        "category": "Tropical"
     },
     {
-        "_id": "64eca52d456ab914ac0ae39a",
         "name": "name",
         "image": "https://a0.muscache.com/im/pictures/a71562ca-bb0e-425d-b33f-e397617159e8.jpg?im_w=720",
         "location": "Dhaka",
         "date": "Aug 1 - 15",
         "rating": 4.3,
-        "price": "1200"
+        "price": "1200",
+        "category": "Beach"
     },
     {
-        "_id": "64eca52d01b8a3693dc65941",
         "name": "name",
         "image": "https://a0.muscache.com/im/pictures/a71562ca-bb0e-425d-b33f-e397617159e8.jpg?im_w=720",
         "location": "Dhaka",
         "date": "Aug 1 - 15",
         "rating": 4.3,
-        "price": "1200"
+        "price": "1200",
+        "category": "Pools"
     },
     {
-        "_id": "64eca52dda97ff66358bbd73",
         "name": "name",
         "image": "https://a0.muscache.com/im/pictures/a71562ca-bb0e-425d-b33f-e397617159e8.jpg?im_w=720",
         "location": "Dhaka",
         "date": "Aug 1 - 15",
         "rating": 4.3,
-        "price": "1200"
+        "price": "1200",
+        "category": "Luxe"
     }
 ]

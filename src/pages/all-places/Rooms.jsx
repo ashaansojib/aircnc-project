@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import { useContext } from 'react';
 import SingleRoom from './SingleRoom';
+import { RoomProviderContext } from '../../providers/RoomProvider';
 
 const Rooms = () => {
-    const [rooms, setRooms] = useState([]);
-    useEffect( ()=> {
-        fetch('/Places.json')
-        .then( res => res.json())
-        .then( data => setRooms(data))
-    },[])
+    const {rooms, user} = useContext(RoomProviderContext);
+    console.log(user)
     return (
-        <div className='grid grid-cols-4 gap-3 justify-between items-items my-container p-2'>
+        <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-3 justify-between items-items my-container p-2'>
             {
                 rooms.map( room => <SingleRoom 
                     key={room._id}
