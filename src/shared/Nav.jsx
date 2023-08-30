@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { RoomProviderContext } from '../providers/RoomProvider';
 
 const Nav = () => {
+
+    const [searchQuery, setSearchQueary] = useState('');
+    const {setRooms} = useContext(RoomProviderContext);
+    const handleSearch = () =>{
+        fetch(`http://localhost:9988/resorts-collection?q=${searchQuery}`)
+        .then( res => res.json())
+        .then( data => setRooms(data))
+    }
     return (
         <nav className='p-4'>
             <div className='my-container grid grid-cols-3 justify-between items-center'>
@@ -11,9 +20,9 @@ const Nav = () => {
                 <div className='flex justify-between items-center col-span-2'>
                     <div className='flex gap-3'>
                         <div>
-                            <input type="text" name="" placeholder='Search Location' className='p-2 border rounded-full' id="" />
+                            <input type="text" value={searchQuery} onChange={(e)=> setSearchQueary(e.target.value)} name="" placeholder='Search Location' className='p-2 border rounded-full' id="" />
                         </div>
-                        <button className='py-2 px-3 rounded-sm bg-red-500'>Search</button>
+                        <button onClick={handleSearch} className='py-2 px-3 rounded-sm bg-red-500'>Search</button>
                     </div>
                     <div>
                         <button className='py-2 px-3 rounded-sm bg-red-500'>Login</button>
