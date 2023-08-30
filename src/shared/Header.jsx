@@ -1,16 +1,26 @@
-import React from 'react';
-import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
+import React, { useContext } from 'react';
+import { RoomProviderContext } from '../providers/RoomProvider';
 
 const Header = () => {
+    const { setRooms } = useContext(RoomProviderContext);
+
+
+    const handleButtonClick = (location) => {
+        // getLocationName(location)
+        fetch(`http://localhost:9988/resorts-in/${location}`)
+            .then(res => res.json())
+            .then(data => setRooms(data))
+    }
+
     return (
-        <header className='my-container'>
+        <div className='my-container'>
             <div className='space-x-2'>
-                <button className='py-2 px-3 inline-block bg-sky-300'>Lake</button>
-                <button className='py-2 px-3 inline-block bg-sky-300'>Pools</button>
-                <button className='py-2 px-3 inline-block bg-sky-300'>Tropical</button>
-                <button className='py-2 px-3 inline-block bg-sky-300'>Beach</button>
+                <button onClick={() => handleButtonClick("lake")} className='py-2 px-3 inline-block bg-sky-300'>Lake</button>
+                <button onClick={() => handleButtonClick("pools")} className='py-2 px-3 inline-block bg-sky-300'>Pools</button>
+                <button onClick={() => handleButtonClick("tropical")} className='py-2 px-3 inline-block bg-sky-300'>Tropical</button>
+                <button onClick={() => handleButtonClick("beach")} className='py-2 px-3 inline-block bg-sky-300'>Beach</button>
             </div>
-        </header>
+        </div>
     );
 };
 

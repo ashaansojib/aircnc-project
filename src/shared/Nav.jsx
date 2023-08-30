@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
         <nav className='p-4'>
             <div className='my-container grid grid-cols-3 justify-between items-center'>
                 <div>
-                    <img src="/logo.PNG" alt="" />
+                    <Link to="/"><img src="/logo.PNG" alt="" /></Link>
                 </div>
                 <div className='flex justify-between items-center col-span-2'>
                     <div className='flex gap-3'>
