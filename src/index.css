@@ -9,3 +9,6 @@ img{
 .my-container{
   @apply mx-auto max-w-screen-xl
 }
+.details-field{
+  @apply border py-2 px-2 inline-block w-full
+}

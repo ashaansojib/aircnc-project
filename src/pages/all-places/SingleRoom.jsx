@@ -10,11 +10,11 @@ const SingleRoom = ({ room }) => {
                     <img src={image} alt="" />
                 </div>
                 <div className='flex justify-between items-center py-2'>
-                    <h2 className='text-xl font-medium'>{name}</h2>
+                    <h2 className='text-xl font-medium'>{name}, {location}</h2>
                     <span>{rating}</span>
                 </div>
                 <div className='text-gray-700'>
-                    <p>{location}</p>
+                    {/* <p>{location}</p> */}
                     <p>{date}</p>
                 </div>
                 <p>${price} - Per Night</p>
