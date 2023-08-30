@@ -25,6 +25,7 @@ const Nav = () => {
                         <button onClick={handleSearch} className='py-2 px-3 rounded-sm bg-red-500'>Search</button>
                     </div>
                     <div>
+                        <Link to="/add-room"><button className='py-2 px-3 hover:text-sky-500'>Add Your Room</button></Link>
                         <button className='py-2 px-3 rounded-sm bg-red-500'>Login</button>
                     </div>
                 </div>
