@@ -23,7 +23,7 @@ const AddRoom = () => {
             price: price
         }
         // fetch and add data to mongodb
-        fetch('http://localhost:9988/add-room', {
+        fetch('https://aircng-backend.vercel.app/add-room', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

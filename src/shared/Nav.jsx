@@ -8,7 +8,7 @@ const Nav = () => {
     const [searchQuery, setSearchQueary] = useState('');
     const { setRooms } = useContext(RoomProviderContext);
     const handleSearch = () => {
-        fetch(`http://localhost:9988/resorts-collection?q=${searchQuery}`)
+        fetch(`https://aircng-backend.vercel.app/resorts-collection?q=${searchQuery}`)
             .then(res => res.json())
             .then(data => setRooms(data))
     }

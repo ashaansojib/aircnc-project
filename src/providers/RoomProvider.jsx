@@ -7,7 +7,7 @@ const RoomProvider = ({ children }) => {
     const [rooms, setRooms] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:9988/resorts')
+        fetch('https://aircng-backend.vercel.app/resorts')
             .then(res => res.json())
             .then(data => setRooms(data))
     }, []);
