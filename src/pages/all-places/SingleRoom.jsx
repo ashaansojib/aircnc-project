@@ -5,9 +5,9 @@ const SingleRoom = ({ room }) => {
     const { name, image, location, date, rating, price } = room;
     return (
         <Link to='/'>
-            <div className='p-2'>
+            <div className='p-2 shadow-md'>
                 <div className='overflow-hidden rounded-lg'>
-                    <img src={image} alt="" />
+                <img className='w-full h-[250px]' src={image} alt="" />
                 </div>
                 <div className='flex justify-between items-center py-2'>
                     <h2 className='text-xl font-medium'>{name}, {location}</h2>

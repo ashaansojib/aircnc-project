@@ -11,10 +11,9 @@ const RoomProvider = ({ children }) => {
             .then(res => res.json())
             .then(data => setRooms(data))
     }, []);
-
     const roomsInfo = {
         rooms,
-        setRooms
+        setRooms,
     }
     return (
         <RoomProviderContext.Provider value={roomsInfo}>

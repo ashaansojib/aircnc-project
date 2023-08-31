@@ -1,4 +1,5 @@
 ## Installed Packages
 * React Router with Vite
 * Tailwindcss
-* Using react tab
+* DaisyUI
+* npm install react-icons --save
