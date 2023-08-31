@@ -7,12 +7,12 @@ const Header = () => {
 
     const handleButtonClick = (location) => {
         // getLocationName(location)
-        fetch(`http://localhost:9988/resorts-in/${location}`)
+        fetch(`https://aircng-backend.vercel.app/resorts-in/${location}`)
             .then(res => res.json())
             .then(data => setRooms(data))
     }
     const handleFiltering = () => {
-        fetch(`http://localhost:9988/price-range?price=${priceFilter}`)
+        fetch(`https://aircng-backend.vercel.app/price-range?price=${priceFilter}`)
         .then( res => res.json())
         .then( data => setRooms(data))
       };
