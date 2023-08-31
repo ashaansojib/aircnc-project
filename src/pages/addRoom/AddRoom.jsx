@@ -1,4 +1,5 @@
 import React from 'react';
+import Swal from 'sweetalert2';
 
 const AddRoom = () => {
     const handleForm = (e) =>{
@@ -30,6 +31,11 @@ const AddRoom = () => {
             body: JSON.stringify(roomInfo)
         })
         form.reset();
+        Swal.fire(
+            'Room Added!',
+            'You clicked the button!',
+            'success'
+          )
     }
     return (
         <div className='max-w-screen-md mx-auto'>

@@ -14,7 +14,7 @@ const Nav = () => {
     }
     return (
         <nav className='p-4'>
-            <div className='my-container grid grid-cols-3 justify-between items-center'>
+            <div className='my-container grid lg:grid-cols-3 justify-between items-center'>
                 <div>
                     <Link to="/"><img src="/logo.PNG" alt="" /></Link>
                 </div>
@@ -27,7 +27,7 @@ const Nav = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className='hidden md:block'>
                         <Link to="/add-room"><button className='py-2 px-3 hover:text-[#FF385C]'>Add Your Room</button></Link>
                         <button className='py-2 px-3 rounded-sm bg-[#FF385C] text-white'>Login</button>
                     </div>

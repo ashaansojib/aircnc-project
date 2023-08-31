@@ -18,7 +18,7 @@ const Header = () => {
       };
     return (
         <div className='my-container'>
-            <div className='flex justify-between items-center'>
+            <div className='md:flex justify-between items-center'>
                 <div className='space-x-2'>
                     <button onClick={() => handleButtonClick("lake")} className='py-2 px-3 inline-block bg-[#FF385C] text-white'>Lake</button>
                     <button onClick={() => handleButtonClick("pools")} className='py-2 px-3 inline-block bg-[#FF385C] text-white'>Pools</button>

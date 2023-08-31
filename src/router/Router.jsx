@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import Home from "../pages/home/Home";
 import AddRoom from "../pages/addRoom/AddRoom";
+import Error from "../pages/error/Error";
 
 const router = createBrowserRouter([
     {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
                 element: <AddRoom />
             }
         ]
+    },
+    {
+        path: '*',
+        element: <Error></Error>
     }
 ]);
 export default router;
